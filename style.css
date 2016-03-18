@@ -1,0 +1,42 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+html {
+	height: 100%;
+}
+body {
+	font-family: arial;
+	font-size: 0.8vmax;
+	color: #FFFFFF;
+	background: url("http://bitcast.cc/background.jpg") center center;
+	height: 100%;
+}
+#container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+#header {
+	display: flex;
+	padding: 0.4vmax;
+	align-items: center;
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 1.5vmax;
+	background-color: rgba(1, 1, 1, 0.15);
+}
+#logo {
+	flex: 0 0 3vmax;
+	margin-right: 0.4vmax;
+}
+#logo img {
+	display: block;
+	width: 100%;
+}
+#content {
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(1, 1, 1, 0.2);
+}
