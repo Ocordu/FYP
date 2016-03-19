@@ -4,7 +4,7 @@
 }
 body {
 	font-family: arial, sans-serif;
-	font-size: 0.8vmax;
+	font-size: 0.65vmax;
 	color: #FFFFFF;
 	background: url("http://bitcast.cc/background.jpg");
 }
@@ -32,7 +32,7 @@ body {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	padding: 1vmax 4vmax 0 4vmax;
+	padding: 1vmax 8vmax 0 8vmax;
 }
 div.content_title {
 	display: flex;
