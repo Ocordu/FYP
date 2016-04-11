@@ -10,7 +10,7 @@
                 Health and Safety
             </div>
                 <div class="content">
-                    Dont make your eyes bleed
+                    Don't make your eyes bleed.
                 </div>
         </div>
     </body>
