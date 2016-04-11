@@ -1,7 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: mbax4fm2
- * Date: 11/04/16
- * Time: 15:58
- */
+<div id="header">
+    <div id="logo"><img src="logo.svg"></div>
+    <div id="website_name">COMP_SCI[1]</div>
+    <div id="links"><a href="profiles.php"> test</a> <a href="health-and-safety.php"> test</a> </div>
+</div>

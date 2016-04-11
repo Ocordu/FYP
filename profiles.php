@@ -2,6 +2,9 @@
     include("html_header.php");
 ?>
     <body>
+        <?php
+            include("header.php");
+        ?>
         EWLELE
     </body>
 </html>
