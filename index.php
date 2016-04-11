@@ -1,14 +1,17 @@
 <?php
-	include("html_header.php");
+	require("html_header.php");
 ?>
 	<body>
 		<div id="container">
 			<?php
-				include("header.php");
+				require("header.php");
 			?>
 			<div id="content_container">
 				<div class="content_title">
-					generated with PHP (normally I would recommend JS for something like this; this is a proof of concept)
+					Our Group
+				</div>
+				<div class="content">
+					Fecking useless.
 				</div>
 			</div>
 		</div>

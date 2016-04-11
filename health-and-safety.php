@@ -1,17 +1,19 @@
 <?php
-    include("html_header.php");
+	require("html_header.php");
 ?>
-    <body>
-        <?php
-            include("header.php");
-        ?>
-        <div id = "content_container">
-            <div class = "content_title">
-                Health and Safety
-            </div>
-                <div class="content">
-                    Don't make your eyes bleed.
-                </div>
-        </div>
-    </body>
+	<body>
+		<div id="container">
+			<?php
+				require("header.php");
+			?>
+			<div id="content_container">
+				<div class="content_title">
+					Health and Safety
+				</div>
+				<div class="content">
+					Apply common sense.
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
