@@ -15,19 +15,6 @@
 				<div class="content_title">
 					Random binaries generated with PHP (normally I would recommend JS for something like this; this is a proof of concept)
 				</div>
-				<?php
-					function echoRandomBinary() {
-						$length = mt_rand(100, 1000);
-						for ($i = 0; $i < $length; $i++) {
-							echo mt_rand(0, 1);
-						}
-					}
-					for ($i = 0; $i < 5; $i++) {
-						echo "<div class=\"content\">";
-						echoRandomBinary();
-						echo "</div>";
-					}
-				?>
 			</div>
 		</div>
 	</body>
