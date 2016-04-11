@@ -33,10 +33,11 @@ body {
 	display: block;
 }
 #links {
-
+	word-spacing: 3vmax;
 }
 #links a {
 	color: #FFFFFF;
+	word-spacing: 3vmax;
 	text-decoration: #FFFFFF;
 }
 #content_container {
