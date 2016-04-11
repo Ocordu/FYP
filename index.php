@@ -10,7 +10,7 @@
 			</div>
 			<div id="content_container">
 				<div class="content_title">
-					binaries generated with PHP (normally I would recommend JS for something like this; this is a proof of concept)
+					generated with PHP (normally I would recommend JS for something like this; this is a proof of concept)
 				</div>
 			</div>
 		</div>
