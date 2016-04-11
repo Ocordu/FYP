@@ -5,6 +5,7 @@
         <?php
             include("header.php");
         ?>
-        EWLELE
+        <div id="profile_header"></div>
+        <div id="profile_content"></div>
     </body>
 </html>

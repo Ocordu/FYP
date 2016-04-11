@@ -40,6 +40,16 @@ body {
 	word-spacing: 3vmax;
 	text-decoration: #FFFFFF;
 }
+#profile_header {
+	background-color: #FFFFFF;
+	height: 50px;
+	margin-top: 200px;
+}
+#profile_content {
+	background-color: #999999;
+	height: 800px;
+
+}
 #content_container {
 	display: flex;
 	flex: 1;
