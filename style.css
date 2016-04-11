@@ -28,6 +28,13 @@ body {
 	display: block;
 	width: 100%;
 }
+#website_name {
+	flex: 10 0 3vmax;
+	display: block;
+}
+#links {
+
+}
 #content_container {
 	display: flex;
 	flex: 1;

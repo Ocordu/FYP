@@ -9,7 +9,8 @@
 		<div id="container">
 			<div id="header">
 				<div id="logo"><img src="logo.svg"></div>
-				<div id="title">COMP_SCI[1]</div>
+				<div id="website_name">COMP_SCI[1]</div>
+				<div id="links">Test</div>
 			</div>
 			<div id="content_container">
 				<div class="content_title">
