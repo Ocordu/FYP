@@ -41,9 +41,20 @@ body {
 	text-decoration: #FFFFFF;
 }
 #profile_header {
+	display: flex;
+	padding: 0.4vmax;
+	align-items: center;
 	background-color: #FFFFFF;
 	height: 50px;
+	font-size: 1vmax;
 	margin-top: 200px;
+	word-spacing: 3vmax;
+}
+#profile_header a {
+	font-size: 1vmax;
+	color: #000000;
+	word-spacing: 3vmax;
+	text-decoration: #FFFFFF;
 }
 #profile_content {
 	background-color: #999999;
