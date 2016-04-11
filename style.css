@@ -35,6 +35,10 @@ body {
 #links {
 
 }
+#links a {
+	color: #FFFFFF;
+	text-decoration: #FFFFFF;
+}
 #content_container {
 	display: flex;
 	flex: 1;
