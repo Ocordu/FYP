@@ -1,6 +1,8 @@
 <?php
 	include("html_header.php");
 ?>
+		<title>Grotspurn: #1 Communal Pit</title>
+	</head>
 	<body>
 		<div id="container">
 			<?php

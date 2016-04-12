@@ -1,6 +1,8 @@
 <?php
 	require("html_header.php");
 ?>
+		<title>COMP_SCI[1]</title>
+	</head>
 	<body>
 		<div id="container">
 			<?php
