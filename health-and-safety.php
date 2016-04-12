@@ -6,12 +6,15 @@
 			<?php
 				require("header.php");
 			?>
+			
 			<div id="content_container">
-				<div class="content_title">
-					Health and Safety
-				</div>
-				<div class="content">
-					Apply common sense.
+				<div class="padder">
+					<div class="content_title">
+						Health and Safety
+					</div>
+					<div class="content">
+						Apply common sense.
+					</div>
 				</div>
 			</div>
 		</div>

@@ -7,11 +7,13 @@
 				require("header.php");
 			?>
 			<div id="content_container">
-				<div class="content_title">
-					Our Group
-				</div>
-				<div class="content">
-					Fecking useless.
+				<div class="padder">
+					<div class="content_title">
+						Our Group
+					</div>
+					<div class="content">
+						Fecking useless.
+					</div>
 				</div>
 			</div>
 		</div>

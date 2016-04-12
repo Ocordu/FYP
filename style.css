@@ -2,15 +2,56 @@
 	margin: 0;
 	padding: 0;
 }
+@media (max-resolution:149dpi) {
+	html {
+		font-size: 16px;
+	}
+}
+@media (min-resolution:150dpi) and (max-resolution:249dpi) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (min-resolution:250dpi) and (max-resolution:349dpi) {
+	html {
+		font-size: 12px;
+	}
+}
+@media (min-resolution:350dpi) and (max-resolution:449dpi) {
+	html {
+		font-size: 10px;
+	}
+}
+@media (min-resolution:450dpi) {
+	html {
+		font-size: 8px;
+	}
+}
 body {
 	font-family: arial, sans-serif;
-	font-size: 0.6vmax;
 	color: #FFFFFF;
 	background: url("background.jpg");
 }
 a {
 	color: #FFFFFF;
 	text-decoration: none;
+}
+@media (orientation:landscape) {
+	div.padder {
+		display: inherit;
+		flex: 1 0 auto;
+		flex-direction: inherit;
+		padding: 0rem 4rem 0rem 4rem;
+		align-items: inherit;
+	}
+}
+@media (orientation:portrait) {
+	div.padder {
+		display: inherit;
+		flex-direction: inherit;
+		padding: 0rem 1rem 0rem 1rem;
+		align-items: inherit;
+	}
 }
 #container {
 	display: flex;
@@ -19,57 +60,56 @@ a {
 }
 #header {
 	display: flex;
-	padding: 0.5vmax 8vmax 0.5vmax 8vmax;
+	padding: 0.5rem 0rem 0.5rem 0rem;
 	align-items: center;
 	font-family: "Pathway Gothic One", sans-serif;
-	font-size: 1.25vmax;
+	font-size: 1.6rem;
 	background-color: rgba(1, 1, 1, 0.2);
 }
 #logo {
-	flex: 0 0 2.5vmax;
-	margin-right: 0.5vmax;
+	flex: 0 0 3rem;
+	margin-right: 0.5rem;
 }
 #logo img {
 	display: block;
 	width: 100%;
 }
-#header_title {
-	display: block;
-	flex: 1 0 0;
-}
 #header_links {
-	word-spacing: 2vmax;
+	flex: 1 0 auto;
+	word-spacing: 1.5rem;
+	text-align: right;
 }
 #content_container {
 	display: flex;
 	flex-direction: column;
-	margin-top: 1vmax;
-	padding: 0 8vmax 0 8vmax;
+	margin-top: 1rem;
 }
 div.content_title {
-	margin-bottom: 0.5vmax;
-	padding: 0.4vmax;
-	font-size: 0.8vmax;
+	flex: 0 0 auto;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+	font-size: 1.3rem;
 	background-color: #535353;
-	border-radius: 0.2vmax;
+	border-radius: 0.2rem;
 }
 div.content {
-	margin-bottom: 0.5vmax;
-	padding: 0.4vmax;
+	flex: 1 0 auto;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
 	word-wrap: break-word;
 	background-color: #5E5E5E;
-	border-radius: 0.2vmax;
+	border-radius: 0.2rem;
 }
 #profile_header {
 	display: flex;
-	margin-top: 9vmax;
-	padding: 0.5vmax 8vmax 0.5vmax 8vmax;
+	margin-top: 10rem;
+	padding: 0.5rem 0rem 0.5rem 0rem;
 	align-items: center;
-	font-size: 0.8vmax;
-	word-spacing: 2vmax;
+	font-size: 1.3rem;
+	word-spacing: 1.5rem;
 	background-color: rgba(1, 1, 1, 0.5);
 }
 #profile_content {
-	flex: 1 0 0;
+	flex: 1 0 auto;
 	background-color: #5E5E5E;
 }
