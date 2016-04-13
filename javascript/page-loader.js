@@ -5,11 +5,10 @@ $("document").ready(function() {
 	$(".home").on("click", function(event) {
 		swapPage(getPageLocation("home"), event);
 	});
-	$("#profiles").on("click", function(event) {
-		swapPage(getPageLocation("profiles"), event);
-	});
-	$("#hns").on("click", function(event) {
-		swapPage(getPageLocation("health-and-safety"), event);
+	$(".nav_link").each(function() {
+		$(this).on("click", function() {
+			swapPage(getPageLocation($(this).attr("id")), event);
+		});
 	});
 });
 function getPageLocation(pageName) {

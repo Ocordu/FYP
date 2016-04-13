@@ -17,7 +17,7 @@
 					</div>
 					<a href="#" class="home">COMP_SCI[1]</a>
 					<div id="header_links">
-						<a href="#" id="profiles"0>Profiles</a>&nbsp;<a href="#" id="hns">H&S</a>&nbsp;<a href="#" id="Facts">Facts</a>
+						<a href="#" class="nav_link" id="profiles">Profiles</a>&nbsp;<a href="#" class="nav_link" id="health-and-safety">H&S</a>&nbsp;<a href="#" class="nav_link" id="facts">Facts</a>
 					</div>
 				</div>
 			</div>
