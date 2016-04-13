@@ -113,3 +113,6 @@ div.content {
 	flex: 1 0 auto;
 	background-color: #5E5E5E;
 }
+ul {
+	list-style-position: inside;
+}
