@@ -6,7 +6,7 @@ $("document").ready(function() {
 		swapPage(getPageLocation("home"), event);
 	});
 	$(".nav_link").each(function() {
-		$(this).on("click", function() {
+		$(this).on("click", function(event) {
 			swapPage(getPageLocation($(this).attr("id")), event);
 		});
 	});
