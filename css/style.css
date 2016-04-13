@@ -124,7 +124,7 @@ div.content_body {
 }
 #profile_header {
 	display: flex;
-	margin-top: 10rem;
+	margin-top: 1.5rem;
 	padding: 0.5rem 0 0.5rem 0;
 	align-items: center;
 	word-spacing: 1.5rem;
@@ -137,4 +137,27 @@ div.content_body {
 #desktop_use {
 	width: 30rem;
 	height: 30rem;
+}
+#row {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+#member_profile img {
+	display: flex;
+}
+.unhover_img img {
+	width: 75%;
+	height: 75%;
+}
+.unhover_img:hover  {
+	-ms-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-o-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+nav {
+	display: block;
 }
