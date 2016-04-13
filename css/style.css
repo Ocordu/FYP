@@ -31,7 +31,7 @@
 body {
 	font-family: arial, sans-serif;
 	color: #FFFFFF;
-	background: url("background.jpg");
+	background: url("../assets/background.jpg");
 }
 a {
 	color: #FFFFFF;
