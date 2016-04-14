@@ -1,53 +1,38 @@
-<div id="content_container">
-	<div class="padder">
-		<div class="panel_title">
-			Group Members
+<div id="avatar_container">
+	<a href="#">
+		<div class="avatar">
+			<img src="assets/logo.svg">
+			<div class="avatar_text_container">
+				<span>Ben</span>
+			</div>
 		</div>
-		<div id="row">
-				<div class="profile_pic">
-					<img src="assets/logo.svg" alt="">
-					<div class="profile_pic_text_container">
-						<div class="profile_pic_text">Ben Cripps</div>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="member_profile">
-				<div class="unhover_img">
-					<img src="assets/logo.svg" alt="" />
-				</div>
-				<span>Member 2</span>
-			</a>
-			<a href="#" class="member_profile">
-				<div class="unhover_img">
-					<img src="assets/logo.svg" alt="" />
-				</div>
-				<span>Fernando Ferreira</span>
-			</a>
-			<a href="#" class="member_profile">
-				<div class="unhover_img">
-					<img src="assets/logo.svg" alt="" />
-				</div>
-				<span>Warren Thomas</span>
-			</a>
+	</a>
+	<a href="#">
+		<div class="avatar">
+			<img src="assets/logo.svg">
+			<div class="avatar_text_container">
+				<span>Fernando</span>
+			</div>
 		</div>
-		<script>
-			var textLow = true;
-			$(".profile_pic").on("mouseover", function() {
-				var sign = "";
-				if (textLow) {
-					sign = "-";
-				} else {
-					sign = "+";
-				}
-				textLow = !textLow;
-				$(this).find(".profile_pic_text").animate({
-					"top": sign + "=100px"
-				}, 500, function() {
-				})
-			});
-		</script>
-	</div>
+	</a>
+	<a href="#">
+		<div class="avatar">
+			<img src="assets/logo.svg">
+			<div class="avatar_text_container">
+				<span>Warren</span>
+			</div>
+		</div>
+	</a>
+	<a href="#">
+		<div class="avatar">
+			<img src="assets/logo.svg">
+			<div class="avatar_text_container">
+				<span>Diana</span>
+			</div>
+		</div>
+	</a>
 </div>
+<!--
 <div id="profile_header">
 	<div class="padder">
 		<nav>
@@ -64,3 +49,4 @@
 		</ul>
 	</nav>
 </div>
+-->
