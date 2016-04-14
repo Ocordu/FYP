@@ -156,9 +156,12 @@ div.profile_pic {
 	height: 200px;
 	/*background-image: url("../assets/logo.svg");*/
 	border-radius: 100px;
-
-	-webkit-filter: brightness(100%);
-	transition: -webkit-filter 0.25s;
+	overflow: hidden;
+}
+div.profile_pic_text_container {
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: center;
 }
 div.profile_pic img {
 	position: relative;
@@ -166,11 +169,13 @@ div.profile_pic img {
 	height: 100%;
 	top: 0;
 	left: 0;
+	-webkit-filter: brightness(100%);
+	transition: -webkit-filter 0.25s;
 }
 div.profile_pic_text {
 	position: relative;
 }
-div.profile_pic:hover {
+div.profile_pic img:hover {
 	-webkit-filter: brightness(50%);
 }
 .unhover_img:hover  {

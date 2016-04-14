@@ -6,7 +6,9 @@
 		<div id="row">
 				<div class="profile_pic">
 					<img src="assets/logo.svg" alt="">
-					<div class="profile_pic_text">Ben Cripps</div>
+					<div class="profile_pic_text_container">
+						<div class="profile_pic_text">Ben Cripps</div>
+					</div>
 				</div>
 			</a>
 			<a href="#" class="member_profile">
@@ -29,11 +31,18 @@
 			</a>
 		</div>
 		<script>
+			var textLow = true;
 			$(".profile_pic").on("mouseover", function() {
-				alert("hover!");
+				var sign = "";
+				if (textLow) {
+					sign = "-";
+				} else {
+					sign = "+";
+				}
+				textLow = !textLow;
 				$(this).find(".profile_pic_text").animate({
-					"top": "-=50px"
-				}, 5000, function() {
+					"top": sign + "=100px"
+				}, 500, function() {
 				})
 			});
 		</script>
