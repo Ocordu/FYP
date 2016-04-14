@@ -142,7 +142,7 @@ div.content_body {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
-	margin-top: 1rem;
+	margin-top: 3rem;
 }
 #member_profile img {
 	display: flex;
@@ -184,7 +184,4 @@ div.profile_pic img:hover {
 	-moz-transform: rotate(15deg);
 	-o-transform: rotate(15deg);
 	transform: rotate(15deg);
-}
-nav {
-	display: block;
 }
