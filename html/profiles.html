@@ -4,11 +4,10 @@
 			Group Members
 		</div>
 		<div id="row">
-			<a href="#" class="member_profile">
-				<div class="unhover_img">
-					<img src="assets/logo.svg" alt="" />
+				<div class="profile_pic">
+					<img src="assets/logo.svg" alt="">
+					<div class="profile_pic_text">Ben Cripps</div>
 				</div>
-				<span>Ben Cripps</span>
 			</a>
 			<a href="#" class="member_profile">
 				<div class="unhover_img">
@@ -29,6 +28,15 @@
 				<span>Warren Thomas</span>
 			</a>
 		</div>
+		<script>
+			$(".profile_pic").on("mouseover", function() {
+				alert("hover!");
+				$(this).find(".profile_pic_text").animate({
+					"top": "-=50px"
+				}, 5000, function() {
+				})
+			});
+		</script>
 	</div>
 </div>
 <div id="profile_header">
