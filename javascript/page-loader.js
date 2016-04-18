@@ -25,7 +25,6 @@ function swapPage(newPage, event) {
 			} else {
 				panel = "a";
 			}
-			
 			$("#panel_" + panel).css("display", "flex");
 			$("#panel_" + panel).load(newPage, function() {
 				$("#panel_" + panel).transition({x : "0vw"}, transformTime, function() {
