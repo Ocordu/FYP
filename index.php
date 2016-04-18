@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="javascript/jquery-2.2.3.min.js"></script>
+		<script src="javascript/jquery.transit.min.js"></script>
 		<script>
 			$.ajaxPrefilter(function(options) {
 				options.async = true;

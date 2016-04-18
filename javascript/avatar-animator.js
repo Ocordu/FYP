@@ -12,8 +12,8 @@ avatarSelector.each(function() {
 });
 function animateAvatarText(avatar, sign) {
 	canRaise = false;
-	$(avatar).find(".avatar_text_container").find("span").animate({
-		"top" : sign + "=100px"
+	$(avatar).find(".avatar_text_container").find("span").transition({
+		y : sign + "100px"
 	}, 250, function() {
 		raised = !raised;
 		canRaise = true;

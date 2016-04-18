@@ -17,15 +17,17 @@ function getPageLocation(pageName) {
 function swapPage(newPage, event) {
 	event.preventDefault();
 	if (page != newPage) {
-		var fadeTime = 175;
-		$("#panel_" + panel).fadeOut(fadeTime, function() {
+		var fadeTime = 250;
+		$("#panel_" + panel).transition({opacity: 0}, fadeTime, function() {
+			$("#panel_" + panel).css("display", "none");
 			if (panel == "a") {
 				panel = "b";
 			} else {
 				panel = "a";
 			}
+			$("#panel_" + panel).css("display", "flex");
 			$("#panel_" + panel).load(newPage, function() {
-				$("#panel_" + panel).fadeIn(fadeTime, function() {
+				$("#panel_" + panel).transition({opacity: 1}, fadeTime, function() {
 					if (page == getPageLocation("profiles")) {
 						$.getScript("javascript/avatar-animator.js");
 					}
