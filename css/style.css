@@ -61,6 +61,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	overflow: hidden;
 }
 #header {
 	display: flex;
@@ -92,6 +93,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 auto;
+	transform: translateX(-100vw);
 }
 #content_container {
 	display: flex;
@@ -174,6 +176,3 @@ div.avatar span {
 	font-family: "Pathway Gothic One", sans-serif;
 	font-size: 3rem;
 }
-/*nav {
-	display: block;
-}*/
