@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	word-wrap: break-word;
+	-webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 @media (max-resolution:149dpi) {
 	html {
@@ -154,11 +155,8 @@ div.avatar {
 	overflow: hidden;
 }
 div.avatar img {
-	position: relative;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	left: 0;
 }
 div.avatar_text_container {
 	display: flex;

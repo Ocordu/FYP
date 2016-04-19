@@ -17,8 +17,8 @@ function getPageLocation(pageName) {
 function swapPage(newPage, event) {
 	event.preventDefault();
 	if (page != newPage) {
-		var transformTime = 500;
-		$("#panel_" + panel).transition({x : "100vw"}, transformTime, function() {
+		var translateTime = 400;
+		$("#panel_" + panel).transition({x : "100vw"}, translateTime, function() {
 			$("#panel_" + panel).css("display", "none");
 			if (panel == "a") {
 				panel = "b";
@@ -27,7 +27,7 @@ function swapPage(newPage, event) {
 			}
 			$("#panel_" + panel).css("display", "flex");
 			$("#panel_" + panel).load(newPage, function() {
-				$("#panel_" + panel).transition({x : "0vw"}, transformTime, function() {
+				$("#panel_" + panel).transition({x : "0vw"}, translateTime, function() {
 					if (page == getPageLocation("profiles")) {
 						$.getScript("javascript/avatar-animator.js");
 					}
