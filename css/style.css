@@ -159,11 +159,6 @@ div.avatar img {
 	height: 100%;
 	top: 0;
 	left: 0;
-	-webkit-filter: brightness(100%);
-	transition: -webkit-filter 0.25s;
-}
-div.avatar img:hover {
-	-webkit-filter: brightness(35%);
 }
 div.avatar_text_container {
 	display: flex;
@@ -174,5 +169,5 @@ div.avatar span {
 	position: relative;
 	color: rgba(1, 1, 1, 0.4);
 	font-family: "Pathway Gothic One", sans-serif;
-	font-size: 3rem;
+	font-size: 2vw;
 }
