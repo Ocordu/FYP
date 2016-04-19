@@ -165,7 +165,7 @@ div.avatar_text_container {
 }
 div.avatar span {
 	position: relative;
-	color: rgba(1, 1, 1, 0.4);
 	font-family: "Pathway Gothic One", sans-serif;
 	font-size: 2vw;
+	color: rgba(1, 1, 1, 0.5);
 }
