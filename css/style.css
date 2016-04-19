@@ -60,8 +60,8 @@ ul {
 #container {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
-	overflow: hidden;
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 #header {
 	display: flex;
@@ -147,10 +147,10 @@ div.content_body {
 	align-items: center;
 }
 div.avatar {
-	width: 18rem;
-	height: 18rem;
-	margin: 0 2.4rem 0 2.4rem;
-	border-radius: 9rem;
+	width: 12vw;
+	height: 12vw;
+	margin: 0 1.5vw 0 1.5vw;
+	border-radius: 6vw;
 	overflow: hidden;
 }
 div.avatar img {
