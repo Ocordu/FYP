@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	word-wrap: break-word;
-	-webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 @media (max-resolution:149dpi) {
 	html {
@@ -150,6 +149,7 @@ div.content_body {
 div.avatar {
 	width: 12vw;
 	height: 12vw;
+	-webkit-transform: translateZ(0) scale(1.0, 1.0);
 	margin: 0 1.5vw 0 1.5vw;
 	border-radius: 6vw;
 	overflow: hidden;
