@@ -93,7 +93,6 @@ ul {
 	display: flex;
 	flex-direction: column;
 	flex: 1 0 auto;
-	transform: translateX(-100vw);
 }
 #content_container {
 	display: flex;
