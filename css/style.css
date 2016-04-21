@@ -81,8 +81,15 @@ ul {
 }
 #header_links {
 	flex: 1 0 auto;
-	word-spacing: 1.5rem;
 	text-align: right;
+	word-spacing: 1rem;
+}
+a.nav_link {
+	display: inline-block;
+	-webkit-transform: translateZ(0) scale(1.0, 1.0);
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+	-webkit-backface-visibility: hidden;
 }
 #panel_a {
 	display: flex;

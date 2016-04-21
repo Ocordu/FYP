@@ -22,15 +22,13 @@ var panel = {
 	}
 };
 var currentPanel = panel.A;
-$("document").ready(function() {
-	$("#panel_" + getCurrentPanelHTMLName()).load(getPageLocation(getCurrentPageHTMLName()));
-	$(".home").on("click", function(event) {
-		swapPage("home", event);
-	});
-	$(".nav_link").each(function() {
-		$(this).on("click", function(event) {
-			swapPage($(this).attr("id"), event);
-		});
+$("#panel_" + getCurrentPanelHTMLName()).load(getPageLocation(getCurrentPageHTMLName()));
+$(".home").on("click", function(event) {
+	swapPage("home", event);
+});
+$(".nav_link").each(function() {
+	$(this).on("click", function(event) {
+		swapPage($(this).attr("id"), event);
 	});
 });
 function swapPage(newPageHTMLName, event) {
