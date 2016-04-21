@@ -9,22 +9,17 @@ avatarSelector.each(function() {
 	});
 });
 function animateAvatar(avatar, animation) {
-	var duration = 200;
+	var duration = 175;
 	var newBlur = "0px";
 	var newBrightness = "100%";
 	var newGrayscale = "0%";
-	var newDivScale = 1;
-	var newImageScale = 1;
+	var newImageScale = 1.0;
 	if (animation == "enter") {
-		newBlur = "3px";
-		newBrightness = "85%";
+		newBlur = "2px";
+		newBrightness = "80%";
 		newGrayscale = "100%";
-		newDivScale = 1.05;
-		newImageScale = 1.03;
+		newImageScale = 1.1;
 	}
-	$(avatar).transition({
-		scale : newDivScale
-	}, duration);
 	$(avatar).find("img").transition({
 		"-webkit-filter" : "blur(" + newBlur + ") brightness(" + newBrightness + ") grayscale(" + newGrayscale + ")",
 		scale : newImageScale
@@ -33,7 +28,7 @@ function animateAvatar(avatar, animation) {
 	if (animation == "enter") {
 		newTextPosition = "-5vw";
 	}
-	$(avatar).find(".avatar_text_container").find("span").transition({
+	$(avatar).find(".avatar_text_container").transition({
 		y : newTextPosition
 	}, duration);
 }

@@ -36,7 +36,7 @@ $("document").ready(function() {
 function swapPage(newPageHTMLName, event) {
 	event.preventDefault();
 	if (getCurrentPageHTMLName() != newPageHTMLName) {
-		var translateTime = 400;
+		var translateTime = 350;
 		var newPage = getPageFromHTMLName(newPageHTMLName);
 		var direction = "+";
 		if (currentPage - newPage > 0) {
