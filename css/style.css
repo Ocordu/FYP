@@ -161,7 +161,7 @@ div.content_body {
 #profile_header {
 	display: flex;
 	margin-top: 14rem;
-	padding: 0.5rem 0 0.5rem 0;
+	padding: 0.25rem 0 0.25rem 0;
 	align-items: center;
 	word-spacing: 2rem;
 	background-color: rgba(1, 1, 1, 0.5);
@@ -182,6 +182,11 @@ div.avatar {
 	border-radius: 6vw;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
+}
+div.avatar#small {
+	width: 8vw;
+	height: 8vw;
+	margin: -5vw 1.5vw 0 0;
 }
 div.avatar img {
 	width: 100%;
