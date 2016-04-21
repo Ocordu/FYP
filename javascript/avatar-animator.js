@@ -9,7 +9,7 @@ avatarSelector.each(function() {
 	});
 });
 function animateAvatar(avatar, animation) {
-	var duration = 175;
+	var duration = 200;
 	var newBlur = "0px";
 	var newBrightness = "100%";
 	var newGrayscale = "0%";
@@ -18,7 +18,7 @@ function animateAvatar(avatar, animation) {
 		newBlur = "2px";
 		newBrightness = "80%";
 		newGrayscale = "100%";
-		newImageScale = 1.1;
+		newImageScale = 1.2;
 	}
 	$(avatar).find("img").transition({
 		"-webkit-filter" : "blur(" + newBlur + ") brightness(" + newBrightness + ") grayscale(" + newGrayscale + ")",
