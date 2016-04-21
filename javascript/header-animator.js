@@ -1,4 +1,4 @@
-$("#title").mouseenter(function() {
+$("#header_title").mouseenter(function() {
 	$("#logo").find("img").transition({
 		rotate : "+=360deg"
 	}, 500);
