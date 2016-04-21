@@ -1,5 +1,4 @@
-var avatarSelector = $(".avatar");
-avatarSelector.each(function() {
+$(".avatar").each(function() {
 	var avatar = {
 		selector : $(this),
 		canAnimateTextShow : true

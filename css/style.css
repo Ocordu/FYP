@@ -118,15 +118,15 @@ a.nav_link {
 	padding: 1rem;
 	font-family: "Lobster Two", cursive;
 	font-size: 8rem;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 0.4rem;
 }
 #group_members {
 	padding: 0.5rem;
 	word-spacing: 2rem;
 	font-family: "Pathway Gothic One", sans-serif;
-	font-size: 2rem;
-	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 1.5rem;
+	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 0 0 0.4rem 0.4rem;
 }
 #content_container {
@@ -160,10 +160,10 @@ div.content_body {
 }
 #profile_header {
 	display: flex;
-	margin-top: 1.5rem;
+	margin-top: 14rem;
 	padding: 0.5rem 0 0.5rem 0;
 	align-items: center;
-	word-spacing: 1.5rem;
+	word-spacing: 2rem;
 	background-color: rgba(1, 1, 1, 0.5);
 }
 #profile_content {

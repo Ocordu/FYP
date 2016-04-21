@@ -9,25 +9,12 @@ var page = {
 		0: {htmlName: "home"},
 		1: {htmlName: "profiles"},
 		2: {htmlName: "profile"},
-		2: {htmlName: "health-and-safety"},
-		3: {htmlName: "facts"}
+		3: {htmlName: "health-and-safety"},
+		4: {htmlName: "facts"}
 	}
 };
-var pageFromOrdinal = [page.HOME, page.PROFILES, page.HEALTH_AND_SAFETY, page.FACTS];
+var pageFromOrdinal = [page.HOME, page.PROFILES, page.PROFILE, page.HEALTH_AND_SAFETY, page.FACTS];
 var currentPage = page.HOME;
-var profile = {
-	BEN: 0,
-	FERNANDO: 1,
-	WARREN: 2,
-	DIANA: 3,
-	properties: {
-		0: {htmlName: "ben"},
-		1: {htmlName: "fernando"},
-		2: {htmlName: "warren"},
-		3: {htmlName: "diana"}
-	}
-};
-var currentProfile;
 var panel = {
 	A: 0,
 	B: 1,
