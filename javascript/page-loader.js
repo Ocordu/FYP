@@ -2,17 +2,32 @@
 var page = {
 	HOME: 0,
 	PROFILES: 1,
-	HEALTH_AND_SAFETY: 2,
-	FACTS: 3,
+	PROFILE: 2,
+	HEALTH_AND_SAFETY: 3,
+	FACTS: 4,
 	properties: {
 		0: {htmlName: "home"},
 		1: {htmlName: "profiles"},
+		2: {htmlName: "profile"},
 		2: {htmlName: "health-and-safety"},
 		3: {htmlName: "facts"}
 	}
 };
 var pageFromOrdinal = [page.HOME, page.PROFILES, page.HEALTH_AND_SAFETY, page.FACTS];
 var currentPage = page.HOME;
+var profile = {
+	BEN: 0,
+	FERNANDO: 1,
+	WARREN: 2,
+	DIANA: 3,
+	properties: {
+		0: {htmlName: "ben"},
+		1: {htmlName: "fernando"},
+		2: {htmlName: "warren"},
+		3: {htmlName: "diana"}
+	}
+};
+var currentProfile;
 var panel = {
 	A: 0,
 	B: 1,
@@ -22,6 +37,7 @@ var panel = {
 	}
 };
 var currentPanel = panel.A;
+var canSwap = true;
 $("#panel_" + getCurrentPanelHTMLName()).load(getPageLocation(getCurrentPageHTMLName()));
 $(".home").on("click", function(event) {
 	swapPage("home", event);
@@ -33,7 +49,8 @@ $(".nav_link").each(function() {
 });
 function swapPage(newPageHTMLName, event) {
 	event.preventDefault();
-	if (getCurrentPageHTMLName() != newPageHTMLName) {
+	if (getCurrentPageHTMLName() != newPageHTMLName && canSwap) {
+		canSwap = false;
 		var translateTime = 350;
 		var newPage = getPageFromHTMLName(newPageHTMLName);
 		var direction = "+";
@@ -56,7 +73,9 @@ function swapPage(newPageHTMLName, event) {
 			}
 			newPanel.css("translate", direction + "100vw");
 			newPanel.load(getPageLocation(newPageHTMLName), function() {
-				$(newPanel).transition({x : "0vw"}, translateTime);
+				$(newPanel).transition({x : "0vw"}, translateTime, function() {
+					canSwap = true;
+				});
 			});
 		});
 		currentPage = newPage;

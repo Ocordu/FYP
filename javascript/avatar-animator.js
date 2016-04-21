@@ -1,14 +1,22 @@
 var avatarSelector = $(".avatar");
 avatarSelector.each(function() {
-	var currentAvatar = $(this);
-	currentAvatar.mouseenter(function() {
-		animateAvatar(currentAvatar, "enter");
+	var avatar = {
+		selector : $(this),
+		canAnimateTextShow : true
+	};
+	avatar.selector.mouseenter(function() {
+		if (avatar.canAnimateTextShow) {
+			avatar.canAnimateTextShow = false;
+			animateAvatar(avatar, "enter", function() {
+				avatar.canAnimateTextShow = true;
+			});
+		}
 	});
-	currentAvatar.mouseleave(function() {
-		animateAvatar(currentAvatar, "leave");
+	avatar.selector.mouseleave(function() {
+		animateAvatar(avatar, "leave");
 	});
 });
-function animateAvatar(avatar, animation) {
+function animateAvatar(avatar, animation, complete) {
 	var duration = 200;
 	var newBlur = "0px";
 	var newBrightness = "100%";
@@ -20,7 +28,7 @@ function animateAvatar(avatar, animation) {
 		newGrayscale = "100%";
 		newImageScale = 1.2;
 	}
-	$(avatar).find("img").transition({
+	avatar.selector.find("img").transition({
 		"-webkit-filter" : "blur(" + newBlur + ") brightness(" + newBrightness + ") grayscale(" + newGrayscale + ")",
 		scale : newImageScale
 	}, duration);
@@ -28,7 +36,7 @@ function animateAvatar(avatar, animation) {
 	if (animation == "enter") {
 		newTextPosition = "-5vw";
 	}
-	$(avatar).find(".avatar_text_container").transition({
+	avatar.selector.find(".avatar_text_container").transition({
 		y : newTextPosition
-	}, duration);
+	}, duration, complete);
 }

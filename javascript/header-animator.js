@@ -1,18 +1,33 @@
+var logoCanAnimate = true;
 $("#header_title").mouseenter(function() {
-	$("#logo").find("img").transition({
-		rotate : "+=360deg"
-	}, 500);
+	if (logoCanAnimate) {
+		logoCanAnimate = false;
+		$("#logo").find("img").transition({
+			rotate : "+=360deg"
+		}, 500, function() {
+			logoCanAnimate = true;
+		});
+	}
 });
 $(".nav_link").each(function() {
-	$(this).mouseenter(function() {
-		highlightLink($(this), 0.1);
+	var link = {
+		selector : $(this),
+		canAnimateFadeIn : true
+	};
+	link.selector.mouseenter(function() {
+		if (link.canAnimateFadeIn) {
+			link.canAnimateFadeIn = false;
+			highlightLink(link, 0.1, function() {
+				link.canAnimateFadeIn = true;
+			});
+		}
 	});
-	$(this).mouseleave(function() {
-		highlightLink($(this), 0);
+	link.selector.mouseleave(function() {
+		highlightLink(link, 0);
 	});
 });
-function highlightLink(link, opacity) {
-	link.transition({
-		"background-color" : "rgba(0, 0, 0, " + opacity + ")"
-	}, 150);
+function highlightLink(link, newOpacity, complete) {
+	link.selector.transition({
+		"background-color" : "rgba(0, 0, 0, " + newOpacity + ")"
+	}, 150, complete);
 }

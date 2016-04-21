@@ -115,14 +115,19 @@ a.nav_link {
 	align-items: center;
 }
 #title {
+	padding: 1rem;
 	font-family: "Lobster Two", cursive;
 	font-size: 8rem;
-	color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0.4rem;
 }
 #group_members {
+	padding: 0.5rem;
 	word-spacing: 2rem;
-	font-size: 1.6rem;
-	color: rgba(0, 0, 0, 0.6);
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 2rem;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0 0 0.4rem 0.4rem;
 }
 #content_container {
 	display: flex;
