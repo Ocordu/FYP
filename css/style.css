@@ -40,6 +40,61 @@ a {
 ul {
 	list-style: inside;
 }
+div#header {
+	display: flex;
+	padding: 0.5rem 0 0.5rem 0;
+	align-items: center;
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 1.7rem;
+	background-color: rgba(1, 1, 1, 0.2);
+}
+div#logo {
+	flex: 0 0 3.4rem;
+	margin-right: 0.5rem;
+}
+div#logo img {
+	display: block;
+	width: 100%;
+}
+div#header_links {
+	flex: 1 0 auto;
+	text-align: right;
+	word-spacing: 1rem;
+}
+a.header_link {
+	display: inline-block;
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+}
+div#panel_a {
+	display: flex;
+	flex: 1 0 auto;
+	flex-direction: column;
+}
+div#panel_b {
+	display: none;
+	flex: 1 0 auto;
+	flex-direction: column;
+}
+div#centered_column_container {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+div#centered_row_container {
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+div#container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
 @media (orientation:landscape) {
 	div.padder {
 		display: inherit;
@@ -57,84 +112,27 @@ ul {
 		align-items: inherit;
 	}
 }
-#container {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	overflow-x: hidden;
-}
-#header {
-	display: flex;
-	padding: 0.5rem 0 0.5rem 0;
-	align-items: center;
-	font-family: "Pathway Gothic One", sans-serif;
-	font-size: 1.7rem;
-	background-color: rgba(1, 1, 1, 0.2);
-}
-#logo {
-	flex: 0 0 3.4rem;
-	margin-right: 0.5rem;
-}
-#logo img {
-	display: block;
-	width: 100%;
-}
-#header_links {
-	flex: 1 0 auto;
-	text-align: right;
-	word-spacing: 1rem;
-}
-a.nav_link {
-	display: inline-block;
-	-webkit-transform: translateZ(0) scale(1.0, 1.0);
-	padding: 0.5rem;
-	border-radius: 0.4rem;
-	-webkit-backface-visibility: hidden;
-}
-#panel_a {
-	display: flex;
-	flex: 1 0 auto;
-	flex-direction: column;
-}
-#panel_b {
-	display: none;
-	flex-direction: column;
-	flex: 1 0 auto;
-}
-#centered_row_container {
-	display: flex;
-	flex: 1 0 auto;
-	justify-content: center;
-	align-items: center;
-}
-#centered_column_container {
-	display: flex;
-	flex-direction: column;
-	flex: 1 0 auto;
-	justify-content: center;
-	align-items: center;
-}
-#title {
+span#topic_title {
 	padding: 1rem;
 	font-family: "Lobster Two", cursive;
 	font-size: 8rem;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 0.4rem;
 }
-#group_members {
+span#group_members {
 	padding: 0.5rem;
 	word-spacing: 2rem;
 	font-family: "Pathway Gothic One", sans-serif;
 	font-size: 1.5rem;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 0 0 0.4rem 0.4rem;
 }
-#content_container {
+div#content_container {
 	display: flex;
 	flex-direction: column;
 	margin-top: 1rem;
 }
-div.panel_title {
+div.page_title {
 	flex: 0 0 auto;
 	margin-bottom: 0.5rem;
 	padding: 0.75rem 0.5rem 0.75rem 0.5rem;
@@ -158,7 +156,7 @@ div.content_body {
 	color: #272727;
 	background-color: #F7F7F7;
 }
-#profile_header {
+div#profile_header {
 	display: flex;
 	margin-top: 14rem;
 	padding: 0.25rem 0 0.25rem 0;
@@ -166,13 +164,9 @@ div.content_body {
 	word-spacing: 2rem;
 	background-color: rgba(1, 1, 1, 0.5);
 }
-#profile_content {
+div#profile_content {
 	flex: 1 0 auto;
 	background-color: #5E5E5E;
-}
-#desktop_use {
-	width: 30rem;
-	height: 30rem;
 }
 div.avatar {
 	width: 12vw;
@@ -198,4 +192,8 @@ div.avatar_text_container {
 	font-family: "Pathway Gothic One", sans-serif;
 	font-size: 2.5vw;
 	-webkit-text-stroke: 1px #000000;
+}
+img#desktop_use {
+	width: 30rem;
+	height: 30rem;
 }

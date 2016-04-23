@@ -9,7 +9,7 @@ $("#header_title").mouseenter(function() {
 		});
 	}
 });
-$(".nav_link").each(function() {
+$(".header_link").each(function() {
 	var link = {
 		selector : $(this),
 		canAnimateFadeIn : true

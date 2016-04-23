@@ -29,7 +29,7 @@ $("#panel_" + getCurrentPanelHTMLName()).load(getPageLocation(getCurrentPageHTML
 $(".home").on("click", function(event) {
 	swapPage("home", event);
 });
-$(".nav_link").each(function() {
+$(".header_link").each(function() {
 	$(this).on("click", function(event) {
 		swapPage($(this).attr("id"), event);
 	});
