@@ -5,27 +5,27 @@
 }
 @media (max-resolution:149dpi) {
 	html {
-		font-size: 14px;
+		font-size: 0.8vw;
 	}
 }
 @media (min-resolution:150dpi) and (max-resolution:249dpi) {
 	html {
-		font-size: 12px;
+		font-size: 0.7vw;
 	}
 }
 @media (min-resolution:250dpi) and (max-resolution:349dpi) {
 	html {
-		font-size: 10px;
+		font-size: 0.6vw;
 	}
 }
 @media (min-resolution:350dpi) and (max-resolution:449dpi) {
 	html {
-		font-size: 8px;
+		font-size: 0.5vw;
 	}
 }
 @media (min-resolution:450dpi) {
 	html {
-		font-size: 6px;
+		font-size: 0.4vw;
 	}
 }
 body {
@@ -95,22 +95,11 @@ div#container {
 	min-height: 100vh;
 	overflow-x: hidden;
 }
-@media (orientation:landscape) {
-	div.padder {
-		display: inherit;
-		flex: 1 0 auto;
-		flex-direction: inherit;
-		padding: 0 4rem 0 4rem;
-		align-items: inherit;
-	}
-}
-@media (orientation:portrait) {
-	div.padder {
-		display: inherit;
-		flex-direction: inherit;
-		padding: 0 1rem 0 1rem;
-		align-items: inherit;
-	}
+div.padder {
+	display: inherit;
+	flex-direction: inherit;
+	padding: 0 1rem 0 1rem;
+	align-items: inherit;
 }
 span#topic_title {
 	padding: 1rem;
@@ -169,18 +158,18 @@ div#profile_content {
 	background-color: #5E5E5E;
 }
 div.avatar {
-	width: 12vw;
-	height: 12vw;
+	width: 16rem;
+	height: 16rem;
 	-webkit-transform: translateZ(0) scale(1.0, 1.0);
-	margin: 0 1.5vw 0 1.5vw;
-	border-radius: 6vw;
+	margin: 0 1.5rem 0 1.5rem;
+	border-radius: 8rem;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
 }
 div.avatar#small {
-	width: 8vw;
-	height: 8vw;
-	margin: -5vw 1.5vw 0 0;
+	width: 10rem;
+	height: 10rem;
+	margin: -7rem 1.5rem 0 0;
 }
 div.avatar img {
 	width: 100%;
@@ -190,7 +179,7 @@ div.avatar_text_container {
 	display: flex;
 	justify-content: center;
 	font-family: "Pathway Gothic One", sans-serif;
-	font-size: 2.5vw;
+	font-size: 3rem;
 	-webkit-text-stroke: 1px #000000;
 }
 img#desktop_use {
