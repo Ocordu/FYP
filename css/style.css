@@ -10,22 +10,22 @@
 }
 @media (min-resolution:150dpi) and (max-resolution:249dpi) {
 	html {
-		font-size: 0.7vw;
+		font-size: 1vw;
 	}
 }
 @media (min-resolution:250dpi) and (max-resolution:349dpi) {
 	html {
-		font-size: 0.6vw;
+		font-size: 1.2vw;
 	}
 }
 @media (min-resolution:350dpi) and (max-resolution:449dpi) {
 	html {
-		font-size: 0.5vw;
+		font-size: 1.4vw;
 	}
 }
 @media (min-resolution:450dpi) {
 	html {
-		font-size: 0.4vw;
+		font-size: 1.6vw;
 	}
 }
 body {
@@ -97,6 +97,7 @@ div#container {
 }
 div.padder {
 	display: inherit;
+	flex: 1 0 auto;
 	flex-direction: inherit;
 	padding: 0 1rem 0 1rem;
 	align-items: inherit;
