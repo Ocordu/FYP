@@ -164,52 +164,37 @@ div#profile_content {
 	flex: 1 0 auto;
 	background-color: #5E5E5E;
 }
-@media (max-resolution: 249dpi) {
-	@media (orientation:landscape) {
-		div.avatar {
-			width: 12rem;
-			height: 12rem;
-			-webkit-transform: translateZ(0) scale(1.0, 1.0);
-			margin: 0 1rem 0 1rem;
-			border-radius: 6rem;
-			overflow: hidden;
-			-webkit-backface-visibility: hidden;
-		}
-	}
-	@media (orientation:portrait) {
-		div.avatar {
-			width: 12rem;
-			height: 12rem;
-			-webkit-transform: translateZ(0) scale(1.0, 1.0);
-			margin: 0.5rem 0 0.5rem 0;
-			border-radius: 6rem;
-			overflow: hidden;
-			-webkit-backface-visibility: hidden;
-		}
+@media (orientation:landscape) and (max-resolution: 249dpi) {
+	div.avatar {
+		width: 12rem;
+		height: 12rem;
+		-webkit-transform: translateZ(0) scale(1.0, 1.0);
+		margin: 0 1rem 0 1rem;
+		border-radius: 6rem;
+		overflow: hidden;
+		-webkit-backface-visibility: hidden;
 	}
 }
-@media (min-resolution: 250dpi) {
-	@media (orientation:landscape) {
-		div.avatar {
-			width: 22vw;
-			height: 22vw;
-			-webkit-transform: translateZ(0) scale(1.0, 1.0);
-			margin: 0 2vw 0 2vw;
-			border-radius: 11vw;
-			overflow: hidden;
-			-webkit-backface-visibility: hidden;
-		}
+@media (orientation:landscape) and (min-resolution: 250dpi) {
+	div.avatar {
+		width: 21vw;
+		height: 21vw;
+		-webkit-transform: translateZ(0) scale(1.0, 1.0);
+		margin: 0 1.75vw 0 1.75vw;
+		border-radius: 10vw;
+		overflow: hidden;
+		-webkit-backface-visibility: hidden;
 	}
-	@media (orientation:portrait) {
-		div.avatar {
-			width: 22vw;
-			height: 22vw;
-			-webkit-transform: translateZ(0) scale(1.0, 1.0);
-			margin: 1vw 0 1vw 0;
-			border-radius: 11vw;
-			overflow: hidden;
-			-webkit-backface-visibility: hidden;
-		}
+}
+@media (orientation:portrait) {
+	div.avatar {
+		width: 12rem;
+		height: 12rem;
+		-webkit-transform: translateZ(0) scale(1.0, 1.0);
+		margin: 0.5rem 0 0.5rem 0;
+		border-radius: 6rem;
+		overflow: hidden;
+		-webkit-backface-visibility: hidden;
 	}
 }
 div.avatar#small {
