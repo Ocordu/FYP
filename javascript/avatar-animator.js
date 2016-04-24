@@ -33,7 +33,7 @@ function animateAvatar(avatar, animation, complete) {
 	}, duration);
 	var newTextPosition = "0vw";
 	if (animation == "enter") {
-		newTextPosition = "-5vw";
+		newTextPosition = "-5rem";
 	}
 	avatar.selector.find(".avatar_text_container").transition({
 		y : newTextPosition
