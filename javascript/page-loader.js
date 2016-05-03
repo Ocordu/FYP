@@ -60,8 +60,8 @@ function swapPage(newPageHTMLName, event) {
 			}
 			newPanel.css("translate", direction + "100vw");
 			newPanel.load(getPageLocation(newPageHTMLName), function() {
+				loadJS(newPage);
 				$(newPanel).transition({x : "0vw"}, translateTime, function() {
-					loadJS(newPage);
 					currentPage = newPage;
 					canSwap = true;
 				});
