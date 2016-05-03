@@ -61,11 +61,12 @@ function swapPage(newPageHTMLName, event) {
 			newPanel.css("translate", direction + "100vw");
 			newPanel.load(getPageLocation(newPageHTMLName), function() {
 				$(newPanel).transition({x : "0vw"}, translateTime, function() {
+					loadJS(newPage);
+					currentPage = newPage;
 					canSwap = true;
 				});
 			});
 		});
-		currentPage = newPage;
 	}
 }
 function getPageFromHTMLName(pageHTMLName) {
@@ -75,6 +76,18 @@ function getPageFromHTMLName(pageHTMLName) {
 				return page;
 			}
 		}
+	}
+}
+function loadJS(newPage) {
+	switch(parseInt(newPage)) {
+		case page.PROFILES:
+			alert("T2");
+			$.getScript("javascript/avatar-animator.js");
+			$.getScript("javascript/profile-loader.js");
+			break;
+		case page.FACTS:
+			$.getScript("javascript/fetch-facts.js");
+			break;
 	}
 }
 function getCurrentPageHTMLName() {
