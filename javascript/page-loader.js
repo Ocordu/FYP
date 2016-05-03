@@ -81,7 +81,6 @@ function getPageFromHTMLName(pageHTMLName) {
 function loadJS(newPage) {
 	switch(parseInt(newPage)) {
 		case page.PROFILES:
-			alert("T2");
 			$.getScript("javascript/avatar-animator.js");
 			$.getScript("javascript/profile-loader.js");
 			break;
