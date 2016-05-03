@@ -7,7 +7,7 @@
 body {
 	font-family: arial, sans-serif;
 	color: #FFFFFF;
-	background: url("../assets/background.jpg");
+	background: url("../assets/background.jpg") fixed;
 }
 a {
 	color: #FFFFFF;
@@ -16,17 +16,23 @@ a {
 ul {
 	list-style: inside;
 }
+div#header_wrapper {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
 div#header {
 	display: flex;
-	padding: 0.5rem 0 0.5rem 0;
+	height: 3.2rem;
+	padding: 0 1rem 0 1rem;
 	align-items: center;
 	font-family: "Pathway Gothic One", sans-serif;
-	font-size: 1.7rem;
-	background-color: rgba(1, 1, 1, 0.2);
+	font-size: 1.2rem;
+	background-color: rgba(1, 1, 1, 0.3);
 }
 div#logo {
-	flex: 0 0 3.4rem;
-	margin-right: 0.5rem;
+	flex: 0 0 2.4rem;
+	margin-right: 0.41rem;
 }
 div#logo img {
 	display: block;
@@ -35,7 +41,7 @@ div#logo img {
 div#header_links {
 	flex: 1 0 auto;
 	text-align: right;
-	word-spacing: 1rem;
+	word-spacing: 0.5rem;
 }
 a.header_link {
 	display: inline-block;
@@ -46,11 +52,13 @@ div#panel_a {
 	display: flex;
 	flex: 1 0 auto;
 	flex-direction: column;
+	padding-top: 3.2rem;
 }
 div#panel_b {
 	display: none;
 	flex: 1 0 auto;
 	flex-direction: column;
+	padding-top: 3.2rem;
 }
 div#centered_column_container {
 	display: flex;
@@ -82,44 +90,27 @@ div#container {
 	min-height: 100vh;
 	overflow-x: hidden;
 }
-@media (orientation:landscape) {
-	div.padder {
-		display: inherit;
-		flex: 1 0 auto;
-		flex-direction: inherit;
-		padding: 0 4rem 0 4rem;
-		align-items: inherit;
-	}
-}
-@media (orientation:portrait) {
-	div.padder {
-		display: inherit;
-		flex: 1 0 auto;
-		flex-direction: inherit;
-		padding: 0 1rem 0 1rem;
-		align-items: inherit;
-	}
-}
 span#topic_title {
 	padding: 1rem;
 	font-family: "Lobster Two", cursive;
-	font-size: 8rem;
+	font-size: 5.5rem;
 	background-color: rgba(0, 0, 0, 0.4);
-	border-radius: 0.4rem;
+	border-radius: 0.3rem;
 }
 span#group_members {
 	padding: 0.5rem;
-	word-spacing: 2rem;
+	word-spacing: 1.5rem;
 	font-family: "Pathway Gothic One", sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	background-color: rgba(0, 0, 0, 0.4);
-	border-radius: 0 0 0.4rem 0.4rem;
+	border-radius: 0 0 0.3rem 0.3rem;
 }
 @media (orientation:landscape) {
 	div#content_container {
 		display: flex;
 		flex-direction: column;
-		width: 70vw;
+		width: 70rem;
+		max-width: 80vw;
 		align-self: center;
 		align-items: center;
 		margin-top: 1rem;
@@ -139,7 +130,7 @@ div.page_title {
 	width: 100%;
 	margin-bottom: 0.6rem;
 	padding: 0.75rem 0.5rem 0.75rem 0.5rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	background-color: #535353;
 	border-radius: 0.2rem;
 }
@@ -151,7 +142,7 @@ div.content {
 }
 div.content_title {
 	padding: 0.5rem;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	background-color: #535353;
 }
 div.content_body {
@@ -161,44 +152,55 @@ div.content_body {
 }
 div#profile_header {
 	display: flex;
-	margin-top: 14rem;
-	padding: 0.25rem 0 0.25rem 0;
+	margin-top: 8rem;
+	padding: 0.5rem 4rem 0.5rem 4rem;
 	align-items: center;
-	word-spacing: 2rem;
+	word-spacing: 1.5rem;
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 1.2rem;
 	background-color: rgba(1, 1, 1, 0.5);
 }
 div#profile_content {
 	flex: 1 0 auto;
 	background-color: #5E5E5E;
 }
-@media (orientation:landscape) {
+@media (orientation:landscape) and (max-resolution: 249dpi) {
 	div.avatar {
-		width: 16rem;
-		max-width: 20vw;
-		height: 16rem;
-		max-height: 20vw;
+		width: 12rem;
+		height: 12rem;
 		-webkit-transform: translateZ(0) scale(1.0, 1.0);
-		margin: 0 1.3rem 0 1.3rem;
-		border-radius: 8rem;
+		margin: 0 1rem 0 1rem;
+		border-radius: 6rem;
+		overflow: hidden;
+		-webkit-backface-visibility: hidden;
+	}
+}
+@media (orientation:landscape) and (min-resolution: 250dpi) {
+	div.avatar {
+		width: 21vw;
+		height: 21vw;
+		-webkit-transform: translateZ(0) scale(1.0, 1.0);
+		margin: 0 1.75vw 0 1.75vw;
+		border-radius: 10vw;
 		overflow: hidden;
 		-webkit-backface-visibility: hidden;
 	}
 }
 @media (orientation:portrait) {
 	div.avatar {
-		width: 16rem;
-		height: 16rem;
+		width: 12rem;
+		height: 12rem;
 		-webkit-transform: translateZ(0) scale(1.0, 1.0);
-		margin: 1rem 0 1rem 0;
-		border-radius: 8rem;
+		margin: 0.5rem 0 0.5rem 0;
+		border-radius: 6rem;
 		overflow: hidden;
 		-webkit-backface-visibility: hidden;
 	}
 }
 div.avatar#small {
-	width: 10rem;
-	height: 10rem;
-	margin: -7rem 1.5rem 0 0;
+	width: 8rem;
+	height: 8rem;
+	margin: -6rem 1.5rem 0 0;
 }
 div.avatar img {
 	width: 100%;
@@ -208,115 +210,117 @@ div.avatar_text_container {
 	display: flex;
 	justify-content: center;
 	font-family: "Pathway Gothic One", sans-serif;
-	font-size: 3rem;
+	font-size: 2.4rem;
 	-webkit-text-stroke: 1px #000000;
 }
 img#desktop_use {
-	width: 30rem;
-	height: 30rem;
+	width: 25rem;
+	max-width: 50vw;
+	height: 25rem;
+	max-height: 50vw;
 	border-radius: 0.4rem;
 }
 @media (orientation:landscape) {
 	@media (max-resolution: 99dpi) {
 		html {
-			font-size: 0.9vw;
+			font-size: 1.3vw;
 		}
 	}
 	@media (min-resolution: 100dpi) and (max-resolution: 149dpi) {
 		html {
-			font-size: 1vw;
+			font-size: 1.45vw;
 		}
 	}
 	@media (min-resolution: 150dpi) and (max-resolution: 199dpi) {
 		html {
-			font-size: 1.1vw;
+			font-size: 1.6vw;
 		}
 	}
 	@media (min-resolution: 200dpi) and (max-resolution: 249dpi) {
 		html {
-			font-size: 1.2vw;
+			font-size: 1.75vw;
 		}
 	}
 	@media (min-resolution: 250dpi) and (max-resolution: 299dpi) {
 		html {
-			font-size: 1.3vw;
+			font-size: 1.9vw;
 		}
 	}
 	@media (min-resolution: 300dpi) and (max-resolution: 349dpi) {
 		html {
-			font-size: 1.4vw;
+			font-size: 2.05vw;
 		}
 	}
 	@media (min-resolution: 350dpi) and (max-resolution: 399dpi) {
 		html {
-			font-size: 1.5vw;
+			font-size: 2.2vw;
 		}
 	}
 	@media (min-resolution: 400dpi) and (max-resolution: 449dpi) {
 		html {
-			font-size: 1.6vw;
+			font-size: 2.35vw;
 		}
 	}
 	@media (min-resolution: 450dpi) and (max-resolution: 499dpi) {
 		html {
-			font-size: 1.7vw;
+			font-size: 2.5vw;
 		}
 	}
 	@media (min-resolution: 500dpi) {
 		html {
-			font-size: 1.8vw;
+			font-size: 2.65vw;
 		}
 	}
 }
 @media (orientation:portrait) {
 	@media (max-resolution: 99dpi) {
 		html {
-			font-size: 1.4vw;
+			font-size: 1.8vw;
 		}
 	}
 	@media (min-resolution: 100dpi) and (max-resolution: 149dpi) {
 		html {
-			font-size: 1.5vw;
+			font-size: 1.95vw;
 		}
 	}
 	@media (min-resolution: 150dpi) and (max-resolution: 199dpi) {
 		html {
-			font-size: 1.6vw;
+			font-size: 2.1vw;
 		}
 	}
 	@media (min-resolution: 200dpi) and (max-resolution: 249dpi) {
 		html {
-			font-size: 1.7vw;
+			font-size: 2.25vw;
 		}
 	}
 	@media (min-resolution: 250dpi) and (max-resolution: 299dpi) {
 		html {
-			font-size: 1.8vw;
+			font-size: 2.4vw;
 		}
 	}
 	@media (min-resolution: 300dpi) and (max-resolution: 349dpi) {
 		html {
-			font-size: 1.9vw;
+			font-size: 2.55vw;
 		}
 	}
 	@media (min-resolution: 350dpi) and (max-resolution: 399dpi) {
 		html {
-			font-size: 2vw;
+			font-size: 2.7vw;
 		}
 	}
 	@media (min-resolution: 400dpi) and (max-resolution: 449dpi) {
 		html {
-			font-size: 2.1vw;
+			font-size: 2.85vw;
 		}
 	}
 	@media (min-resolution: 450dpi) and (max-resolution: 499dpi) {
 		html {
-			font-size: 2.2vw;
+			font-size: 3vw;
 		}
 	}
 	@media (min-resolution: 500dpi) {
 		html {
-			font-size: 2.3vw;
+			font-size: 3.15vw;
 		}
 	}
 }
