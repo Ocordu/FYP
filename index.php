@@ -29,7 +29,7 @@
 			</div>
 			<a href="#" class="home" id="header_title">COMP_SCI[1]</a>
 			<div id="header_links">
-				<a href="#" class="header_link" id="profiles">Profiles</a>&nbsp;<a href="#" class="header_link" id="health-and-safety">H&S</a>&nbsp;<a href="#" class="header_link" id="facts">Facts</a>&nbsp;<a href="#" class="header_link" id="languages">Markup Languages</a>
+				<a href="#" class="header_link" id="profiles">Profiles</a>&nbsp;<a href="#" class="header_link" id="health-and-safety">H&S</a>&nbsp;<a href="#" class="header_link" id="facts">Facts</a>&nbsp;<a href="#" class="header_link" id="languages">Languages</a>
 			</div>
 		</div>
 	</div>
