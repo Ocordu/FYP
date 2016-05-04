@@ -4,15 +4,17 @@ var page = {
 	PROFILE: 2,
 	HEALTH_AND_SAFETY: 3,
 	FACTS: 4,
+	LANGUAGES: 5,
 	properties: {
 		0: {htmlName: "home"},
 		1: {htmlName: "profiles"},
 		2: {htmlName: "profile"},
 		3: {htmlName: "health-and-safety"},
-		4: {htmlName: "facts"}
+		4: {htmlName: "facts"},
+		5: {htmlName: "languages"}
 	}
 };
-var pageFromOrdinal = [page.HOME, page.PROFILES, page.PROFILE, page.HEALTH_AND_SAFETY, page.FACTS];
+var pageFromOrdinal = [page.HOME, page.PROFILES, page.PROFILE, page.HEALTH_AND_SAFETY, page.FACTS, page.LANGUAGES];
 var currentPage = page.HOME;
 var panel = {
 	A: 0,

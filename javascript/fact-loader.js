@@ -17,6 +17,6 @@ $.get("data/stats/course.xml").success(function(data) {
 					$("#cs_facts").html($(statisticDetail).find("Value").text() + "% of the students obtained an lower second.");
 				}}
 			);
-		}
-	});
+		})
+	})
 });
