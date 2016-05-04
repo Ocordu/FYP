@@ -8,7 +8,13 @@ $.get("data/stats/course.xml").success(function(data) {
 				//if the current statistic detail's code node has text UFIRST
 				if ($(statisticDetail).find("Code").text() == "UFIRST") {
 					//$(statisticDetail).find("Value").text() is the percentage
-					$("#cs_facts").html($(statisticDetail).find("Value").text() + "% achieved a first.");
+					$("#cs_facts").html($(statisticDetail).find("Value").text() + "% of the students obtained a first.");
+				}}
+				if ($(statisticDetail).find("Code").text() == "UUPPER") {
+					$("#cs_facts").html($(statisticDetail).find("Value").text() + "% of the students obtained an upper second.");
+				}}
+				if ($(statisticDetail).find("Code").text() == "ULOWER") {
+					$("#cs_facts").html($(statisticDetail).find("Value").text() + "% of the students obtained an lower second.");
 				}}
 			);
 		}
