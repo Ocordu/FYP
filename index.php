@@ -1,3 +1,6 @@
+<?php
+	require("php/update-stats.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
