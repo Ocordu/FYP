@@ -1,11 +1,11 @@
+<?php
+require("php/update-stats.php");
+?>
 <!--
 	Unless otherwise stated, all code in this project was written by the members of this group.
 	jQuery's documentation and jQuery Transit's home page were referred to while writing the JavaScript code.
 	Note that the following website was used to learn about enums in JavaScript: https://stijndewitt.com/2014/01/26/enums-in-javascript/
 -->
-<?php
-	require("php/update-stats.php");
-?>
 <!DOCTYPE html>
 <html>
 <head>
