@@ -84,6 +84,9 @@ function loadJS(newPage) {
 			$.getScript("javascript/avatar-animator.js");
 			$.getScript("javascript/profile-loader.js");
 			break;
+		case page.PROFILE:
+			$.getScript("javascript/fetch-avatar.js");
+			break;
 	}
 }
 function getCurrentPageHTMLName() {
