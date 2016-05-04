@@ -154,9 +154,8 @@ div.content_body {
 div#profile_header {
 	display: flex;
 	margin-top: 8rem;
-	padding: 0.5rem 4rem 0.5rem 4rem;
+	padding: 0.5rem 2rem 0.5rem 2rem;
 	align-items: center;
-	word-spacing: 1.5rem;
 	font-family: "Pathway Gothic One", sans-serif;
 	font-size: 1.2rem;
 	background-color: rgba(1, 1, 1, 0.5);
@@ -201,7 +200,7 @@ div#profile_content {
 div.avatar#small {
 	width: 8rem;
 	height: 8rem;
-	margin: -6rem 1.5rem 0 0;
+	margin: -6rem 1rem 0 0;
 }
 div.avatar img {
 	width: 100%;

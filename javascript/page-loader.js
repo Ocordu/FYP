@@ -28,14 +28,14 @@ var currentPanel = panel.A;
 var canSwap = true;
 $("#panel_" + getCurrentPanelHTMLName()).load(getPageLocation(getCurrentPageHTMLName()));
 $(".home").on("click", function(event) {
-	swapPage("home", event);
+	swapPage("home", event, function() {});
 });
 $(".header_link").each(function() {
 	$(this).on("click", function(event) {
-		swapPage($(this).attr("id"), event);
+		swapPage($(this).attr("id"), event, function() {});
 	});
 });
-function swapPage(newPageHTMLName, event) {
+function swapPage(newPageHTMLName, event, onPageLoad) {
 	event.preventDefault();
 	if (getCurrentPageHTMLName() != newPageHTMLName && canSwap) {
 		canSwap = false;
@@ -62,6 +62,7 @@ function swapPage(newPageHTMLName, event) {
 			newPanel.css("translate", direction + "100vw");
 			newPanel.load(getPageLocation(newPageHTMLName), function() {
 				loadJS(newPage);
+				onPageLoad();
 				$(newPanel).transition({x : "0vw"}, translateTime, function() {
 					currentPage = newPage;
 					canSwap = true;
@@ -84,9 +85,6 @@ function loadJS(newPage) {
 		case page.PROFILES:
 			$.getScript("javascript/avatar-animator.js");
 			$.getScript("javascript/profile-loader.js");
-			break;
-		case page.PROFILE:
-			$.getScript("javascript/fetch-avatar.js");
 			break;
 		case page.FACTS:
 			$.getScript("javascript/fact-loader.js");

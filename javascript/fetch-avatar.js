@@ -1,1 +1,0 @@
-$(".avatar").append("<img src='assets/" + profile.properties[currentProfile].htmlName + ".jpg'>");
