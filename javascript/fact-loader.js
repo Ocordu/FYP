@@ -16,7 +16,5 @@ $.get("data/stats/course.xml").success(function(data) {
 				if ($(statisticDetail).find("Code").text() == "ULOWER") {
 					$("#cs_facts").html($(statisticDetail).find("Value").text() + "% of the students obtained an lower second.");
 				}}
-			);
-		})
-	})
+	);
 });
