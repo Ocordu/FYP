@@ -213,6 +213,13 @@ div.avatar_text_container {
 	font-size: 2.4rem;
 	-webkit-text-stroke: 1px #000000;
 }
+img#UOM {
+	width: 17rem;
+	max-width: 34vw;
+	height: 10rem;
+	max-height: 20vw;
+	border-radius: 0.4rem;
+}
 img#desktop_use {
 	width: 25rem;
 	max-width: 50vw;
