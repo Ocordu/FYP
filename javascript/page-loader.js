@@ -1,4 +1,3 @@
-//Resource used to learn about enums in JavaScript: https://stijndewitt.com/2014/01/26/enums-in-javascript/
 var page = {
 	HOME: 0,
 	PROFILES: 1,

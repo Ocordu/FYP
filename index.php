@@ -1,3 +1,8 @@
+<!--
+	Unless otherwise stated, all code in this project was written by the members of this group.
+	jQuery's documentation and jQuery Transit's home page were referred to while writing the JavaScript code.
+	Note that the following website was used to learn about enums in JavaScript: https://stijndewitt.com/2014/01/26/enums-in-javascript/
+-->
 <?php
 	require("php/update-stats.php");
 ?>
@@ -5,8 +10,9 @@
 <html>
 <head>
 	<title>COMP_SCI[1]</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--The following line was copied from Google Fonts.-->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One">
+	<!--The following line was copied from Google Fonts.-->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster+Two:700">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="javascript/jquery-2.2.3.min.js"></script>
